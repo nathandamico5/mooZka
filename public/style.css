@@ -1,0 +1,167 @@
+body {
+  margin: 0px;
+}
+
+.container {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*--- Sidebar ---*/
+.side-bar {
+  width: 30vw;
+  height: 100vh;
+  background-color: #1d344e;
+  color: #ffffff;
+  padding: 25px 0px;
+}
+.side-bar h2 {
+  padding: 0px 25px;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+}
+
+.nav-items .link {
+  font-size: 25px;
+  cursor: pointer;
+  padding: 10px 25px;
+  transition: background-color, 0.5s;
+  transition: color, 0.5s;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid #cccccc;
+}
+
+.nav-items .link:hover {
+  background-color: #cccccc;
+  color: #1d344e;
+  transition: background-color, 0.5s;
+  transition: color, 0.5s;
+}
+
+/*--- Search Forms ---*/
+form.search {
+  margin: 25px 0px;
+}
+form.search input {
+  padding: 10px;
+  width: 25%;
+}
+
+/*--- Player ---*/
+#player-container {
+  position: fixed;
+  height: 56px;
+  width: 100%;
+  bottom: 0;
+  background-color: #999999;
+  display: flex;
+  justify-content: center;
+}
+
+#player-controls {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#player-controls > div:hover {
+  opacity: 0.5;
+  transition: opacity 0.5s;
+  cursor: pointer;
+}
+
+/*--- Main View ---*/
+.view {
+  width: 70vw;
+  height: 100vh;
+  color: #1d344e;
+  background-color: #cccccc;
+  overflow: scroll;
+}
+.view .content {
+  padding: 25px;
+  padding-top: 0px;
+}
+.view .hero {
+  padding: 25px;
+  padding-bottom: 0px;
+}
+.view .albums,
+.view .artists {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*--- Album Box ---*/
+.album-box,
+.artist-box {
+  cursor: pointer;
+  padding: 20px;
+}
+.album-box img,
+.artist-box img {
+  width: 200px;
+}
+
+/*--- Single Album ---*/
+.album img {
+  width: 250px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table th {
+  text-align: left;
+  padding: 10px;
+}
+
+table tr.table-header {
+  background-color: #1d344e;
+  color: #ffffff;
+}
+
+table tr.song:hover {
+  background-color: #999999;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+table tr.active {
+  background-color: #333;
+}
+
+.song td {
+  border-bottom: 1px solid gray;
+  padding: 10px;
+}
+
+/*--- Single Artist ---*/
+.artist.hero img {
+  height: 250px;
+}
+.artist.hero {
+  background-color: #aaaaaa;
+  display: flex;
+  padding-bottom: 25px;
+  align-items: center;
+}
+.artist.hero h2 {
+  padding-left: 20px;
+  font-size: 50px;
+  margin: 0px;
+}
